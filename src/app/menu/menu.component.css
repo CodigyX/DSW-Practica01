@@ -1,0 +1,70 @@
+/* Estilos generales */
+.menu-header {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .menu-image {
+    max-width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    margin-top: 15px;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+  }
+  
+  .menu-nav {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .menu-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #004080; /* Azul más claro */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    background-color: #0059b3; /* Azul más intenso */
+  }
+  
+  .menu-info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .menu-info h2 {
+    color: #003366; /* Azul oscuro */
+  }
+  
+  .menu-info p {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .primary-btn {
+    background-color: #004080; /* Azul intermedio */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #0059b3; /* Hover en azul */
+  }
+  
+  .menu-footer {
+    background-color: #00264d; /* Azul oscuro intenso */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  

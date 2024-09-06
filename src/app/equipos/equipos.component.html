@@ -1,0 +1,82 @@
+<header class="equipos-header">
+  <h1>Equipos de la Liga MX</h1>
+</header>
+
+<nav class="equipos-navbar">
+  <ul>
+    <li><a href="#menu">Menú</a></li>
+    <li><a (click)="scrollToSection('equipos')">Equipos</a></li>
+    <li><a (click)="scrollToSection('tabla-porcentual')">Tabla Porcentual</a></li>
+    <li><a (click)="scrollToSection('historia')">Historia</a></li>
+    <li><a (click)="scrollToSection('tabla-titulos')">Tabla de Títulos</a></li>
+  </ul>
+</nav>
+
+<!-- Sección de Equipos -->
+<section id="equipos" class="equipos-seccion">
+  <h2>Equipos de la Liga MX</h2>
+  <div class="equipos-lista">
+    <div *ngFor="let equipo of equipos" class="equipo">
+      <img [src]="equipo.logo" alt="{{ equipo.nombre }} logo" class="equipo-logo">
+      <h3>{{ equipo.nombre }}</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Tabla Porcentual -->
+<section id="tabla-porcentual" class="equipos-seccion">
+  <h2>Tabla Porcentual Actual</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Posición</th>
+        <th>Equipo</th>
+        <th>Puntos</th>
+        <th>Partidos Jugados</th>
+        <th>Porcentaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let equipo of tablaPorcentual">
+        <td>{{ equipo.posicion }}</td>
+        <td>{{ equipo.nombre }}</td>
+        <td>{{ equipo.puntos }}</td>
+        <td>{{ equipo.partidos }}</td>
+        <td>{{ equipo.porcentaje }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Sección de Historia -->
+<section id="historia" class="equipos-seccion">
+  <h2>Historia de los Equipos</h2>
+  <p>
+    La Liga MX tiene una rica historia que se remonta a 1943, con algunos de los equipos más antiguos como
+    el Club América, Chivas, y Pumas, formando parte de su creación. A lo largo de los años, ha crecido
+    hasta contar con 18 equipos que representan diferentes regiones de México.
+  </p>
+</section>
+
+<!-- Sección de Tabla de Títulos -->
+<section id="tabla-titulos" class="equipos-seccion">
+  <h2>Equipos con más títulos de la Liga MX</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Equipo</th>
+        <th>Títulos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let equipo of tablaTitulos">
+        <td>{{ equipo.nombre }}</td>
+        <td>{{ equipo.titulos }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="equipos-footer">
+  <p>© 2024 Todos los derechos reservados - Liga MX</p>
+</footer>
