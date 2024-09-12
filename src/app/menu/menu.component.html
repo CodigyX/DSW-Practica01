@@ -1,21 +1,43 @@
 <header class="menu-header">
-  <h1>Bienvenido a la Liga MX</h1>
-  <img src="assets/images/img.jpeg" alt="Liga MX" class="menu-image">
+  <h1>Bienvenido a la Liga MX</h1><img src="assets/images/ligamx.png" alt="Banner Liga MX" class="banner-img">
 </header>
 
-<nav class="menu-nav">
-  <a routerLink="/equipos" class="menu-link">Equipos</a>
-  <a routerLink="/noticias" class="menu-link">Noticias</a>
+<nav class="menu-navbar">
+  <ul>
+    <li><a routerLink="/" class="active">Menú</a></li>
+    <li><a routerLink="/equipos">Equipos</a></li>
+    <li><a routerLink="/noticias">Noticias</a></li>
+    <li><a (click)="scrollToSection('historia')">Historia</a></li>
+    <li><a (click)="scrollToSection('estadisticas')">Estadísticas</a></li>
+    <li><a (click)="scrollToSection('fan-zone')">Zona de Aficionados</a></li>
+    <li><a (click)="scrollToSection('contacto')">Contacto</a></li>
+  </ul>
 </nav>
 
-<section class="menu-info">
-  <h2>La liga más emocionante de México</h2>
-  <p>
-    La Liga MX es la liga de fútbol profesional de mayor prestigio en México. Con equipos legendarios
-    y jugadores de clase mundial, brinda emociones y espectáculo en cada jornada. Sigue los últimos
-    resultados, noticias y estadísticas de tus equipos favoritos.
-  </p>
-  <button class="primary-btn">Conoce más</button>
+<section class="menu-content">  
+  <h2>Explora la Liga MX</h2>
+  <div class="menu-sections">
+    <div id="historia" class="menu-section">
+      <h3>Historia de la Liga MX</h3>
+      <p>Conoce el origen y la evolución de la Liga MX desde sus inicios hasta la actualidad. Descubre cómo ha crecido y se ha convertido en la liga de fútbol más importante de México.</p>
+      <a routerLink="/historia" class="button">Leer Historia</a>
+    </div>
+    <div id="estadisticas" class="menu-section">
+      <h3>Estadísticas</h3>
+      <p>Consulta las estadísticas más recientes de la liga, incluyendo datos de rendimiento de los equipos, jugadores destacados y mucho más.</p>
+      <a routerLink="/estadisticas" class="button">Ver Estadísticas</a>
+    </div>
+    <div id="fan-zone" class="menu-section">
+      <h3>Zona de Aficionados</h3>
+      <p>Participa en foros, consulta artículos exclusivos y conoce las actividades dedicadas a los fanáticos de la Liga MX.</p>
+      <a routerLink="/fan-zone" class="button">Ir a la Zona de Aficionados</a>
+    </div>
+    <div id="contacto" class="menu-section">
+      <h3>Contacto</h3>
+      <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+      <a routerLink="/contacto" class="button">Contáctanos</a>
+    </div>
+  </div>
 </section>
 
 <footer class="menu-footer">

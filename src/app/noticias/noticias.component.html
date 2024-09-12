@@ -1,22 +1,89 @@
 <header class="noticias-header">
-  <h1>Últimas Noticias de la Liga MX</h1>
+  <h1>Noticias de la Liga MX</h1>
 </header>
 
-<section class="noticias-lista">
-  <article>
-    <h2>Tigres campeón del torneo Apertura 2024</h2>
-    <p>Con una actuación increíble, Tigres ganó el campeonato con un marcador de 3-1.</p>
-  </article>
+<nav class="noticias-navbar">
+  <ul>
+    <li><a routerLink="/">Menú</a></li>
+    <li><a (click)="scrollToSection('noticias')">Noticias</a></li>
+    <li><a (click)="scrollToSection('eventos')">Eventos Recientes</a></li>
+    <li><a (click)="scrollToSection('resultados')">Resultados</a></li>
+    <li><a (click)="scrollToSection('próximos-partidos')">Próximos Partidos</a></li>
+  </ul>
+</nav>
 
-  <article>
-    <h2>Refuerzos de lujo para el Club América</h2>
-    <p>El Club América se refuerza con dos jugadores europeos para la próxima temporada.</p>
-  </article>
+<!-- Sección de Noticias -->
+<section id="noticias" class="noticias-seccion">
+  <h2>Últimas Noticias</h2>
+  <div class="noticias-articulos">
+    <article class="noticia">
+      <img src="assets/noticias/noticia1.jpg" alt="Noticia 1" class="noticia-imagen">
+      <div class="noticia-contenido">
+        <h3>Título de la Noticia 1</h3>
+        <p>Resumen de la noticia 1. Aquí puedes incluir información relevante y actual sobre la Liga MX.</p>
+        <a href="#" class="leer-mas">Leer más</a>
+      </div>
+    </article>
+    <article class="noticia">
+      <img src="assets/noticias/noticia2.jpg" alt="Noticia 2" class="noticia-imagen">
+      <div class="noticia-contenido">
+        <h3>Título de la Noticia 2</h3>
+        <p>Resumen de la noticia 2. Aquí puedes incluir información relevante y actual sobre la Liga MX.</p>
+        <a href="#" class="leer-mas">Leer más</a>
+      </div>
+    </article>
+    <!-- Agrega más artículos de noticias aquí -->
+  </div>
+</section>
 
-  <article>
-    <h2>Chivas presenta nuevo entrenador</h2>
-    <p>El equipo de Guadalajara anunció a su nuevo director técnico para el Clausura 2024.</p>
-  </article>
+<!-- Sección de Eventos Recientes -->
+<section id="eventos" class="noticias-seccion">
+  <h2>Eventos Recientes</h2>
+  <ul class="eventos-lista">
+    <li><strong>Evento 1:</strong> Descripción breve del evento reciente.</li>
+    <li><strong>Evento 2:</strong> Descripción breve del evento reciente.</li>
+    <!-- Agrega más eventos aquí -->
+  </ul>
+</section>
+
+<!-- Sección de Resultados -->
+<section id="resultados" class="noticias-seccion">
+  <h2>Resultados Recientes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Equipo Local</th>
+        <th>Equipo Visitante</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01/09/2024</td>
+        <td>América</td>
+        <td>Chivas</td>
+        <td>2 - 1</td>
+      </tr>
+      <tr>
+        <td>02/09/2024</td>
+        <td>Atlas</td>
+        <td>Tigres</td>
+        <td>0 - 1</td>
+      </tr>
+      <!-- Agrega más resultados aquí -->
+    </tbody>
+  </table>
+</section>
+
+<!-- Sección de Próximos Partidos -->
+<section id="próximos-partidos" class="noticias-seccion">
+  <h2>Próximos Partidos</h2>
+  <ul class="proximos-partidos-lista">
+    <li><strong>Fecha:</strong> Equipo A vs Equipo B - Hora</li>
+    <li><strong>Fecha:</strong> Equipo C vs Equipo D - Hora</li>
+    <!-- Agrega más próximos partidos aquí -->
+  </ul>
 </section>
 
 <footer class="noticias-footer">

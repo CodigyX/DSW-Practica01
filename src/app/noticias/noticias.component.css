@@ -1,0 +1,139 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header, nav, section, footer {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Header */
+  .noticias-header {
+    background-color: #003b6f; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .noticias-header h1 {
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .noticias-navbar {
+    background-color: #004080; /* Azul más oscuro */
+    color: #fff;
+  }
+  
+  .noticias-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .noticias-navbar li {
+    margin: 0;
+  }
+  
+  .noticias-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+  }
+  
+  .noticias-navbar a:hover {
+    background-color: #0056b3; /* Azul más claro al pasar el cursor */
+  }
+  
+  /* Secciones */
+  .noticias-seccion {
+    margin-bottom: 30px;
+  }
+  
+  .noticias-seccion h2 {
+    border-bottom: 2px solid #003b6f; /* Línea debajo del título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #003b6f;
+  }
+  
+  .noticias-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .noticia {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 300px;
+    background-color: #f9f9f9;
+  }
+  
+  .noticia-imagen {
+    width: 100%;
+    height: auto;
+  }
+  
+  .noticia-contenido {
+    padding: 15px;
+  }
+  
+  .noticia-contenido h3 {
+    margin-top: 0;
+  }
+  
+  .leer-mas {
+    color: #003b6f;
+    text-decoration: none;
+  }
+  
+  .leer-mas:hover {
+    text-decoration: underline;
+  }
+  
+  /* Eventos y Resultados */
+  .eventos-lista, .proximos-partidos-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .eventos-lista li, .proximos-partidos-lista li {
+    margin-bottom: 10px;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #003b6f;
+    color: #fff;
+  }
+  
+  /* Footer */
+  .noticias-footer {
+    background-color: #003b6f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  

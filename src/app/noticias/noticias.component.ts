@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./noticias.component.css']
 })
 export class NoticiasComponent {
-
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
